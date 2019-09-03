@@ -5,7 +5,9 @@ namespace Menu
     {
         public static double Billetter(double valg)
         {
-            int antalbørn, antalvoksen;
+            int antalbørn = 0;
+            int antalvoksen = 0;
+
             double rabat, beløb, beløbtilbage, totalprisUSD;
             double totalpris = 0;
             if (valg == 1)
@@ -14,16 +16,23 @@ namespace Menu
 
                     // Rydder console for tekst, og spørg derefter antal billetter og udregning
                     Console.Clear();
-            
+
                     Console.WriteLine("Du har valgt at købe billetter.");
 
                     Console.WriteLine("Du skal nu vælge, hvor mange voksen og/eller børnebilletter du ønsker");
                     Console.WriteLine("Hvor mange børnebilletter ønsker du?");
                     antalbørn = Convert.ToInt32(Console.ReadLine());
+
+                } while (antalbørn > 10);
+                do{
+                
                     Console.WriteLine("Hvor mange voksenbilletter ønsker du?");
                     antalvoksen = Convert.ToInt32(Console.ReadLine());
+
                     totalpris = antalbørn * 30 + antalvoksen * 65;
                     Console.Clear();
+                } while (antalvoksen > 10);
+
                     Console.WriteLine("Ved køb af {0} voksenbilletter og {1} børnebilletter, ligger din pris på {2} kr",antalvoksen, antalbørn, totalpris);
                     // Totalprisen er nu udregning og udskrevet
 
@@ -65,7 +74,7 @@ namespace Menu
 
 
 
-                } while (antalbørn < 1  || antalvoksen < 1);
+                
 
 
                 

@@ -10,7 +10,7 @@ namespace Menu
             //Dato
             Console.SetCursorPosition(90, 0);
             DateTime dateTime = DateTime.Now;
-            Console.WriteLine("Today is: {0}", dateTime);
+            Console.WriteLine("Idag er datoen: {0}", dateTime);
 
 
 

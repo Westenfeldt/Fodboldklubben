@@ -8,7 +8,7 @@ namespace Menu
 
 
             //Dato
-            Console.SetCursorPosition(90, 0);
+            Console.SetCursorPosition(80, 0);
             DateTime dateTime = DateTime.Now;
             Console.WriteLine("Idag er datoen: {0}", dateTime);
 

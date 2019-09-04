@@ -11,7 +11,7 @@ namespace Menu
             do
             {
                 int valg = Menu.StartMenu();
-                // double nypris = Administration.Admin(valg); VIRKER IKKE
+                Administration.Admin(valg); // TJEK AF KODEORD VIRKER ---- RESTEN VIRKER IKKE.
                 BilletSystem.Billetter(valg);
             } while (kør == 0);
 

@@ -5,6 +5,7 @@ namespace Menu
         {
             public static double Admin(double valg)
         {
+            if (valg == 2) { 
             Console.WriteLine("Du prøver at tilgå den administrative del. Indtast det korrekte kodeord.");
 
             string kodeord = Console.ReadLine();
@@ -38,11 +39,14 @@ namespace Menu
 
                 }
             }
-            double nypris = 1;
+            } else
+            {
+
+            }
 
 
 
-            return nypris;
+            return 0;
         }
 
 
